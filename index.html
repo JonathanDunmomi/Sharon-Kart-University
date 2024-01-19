@@ -3,29 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
-    <title>University Website</title>
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
     <section class="header">
       <nav>
         <a href=""><img src="images/logoh.png" alt=""></a>
-        <div class="nav-links">
-          <i class="fa fa-times"></i>
-            <ul>
+        <div class="nav-links" id="navlinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+              <ul>
                 <li><a href="">HOME</a></li>
                 <li><a href="">ABOUT</a></li>
                 <li><a href="">COURSE</a></li>
                 <li><a href="">BLOG</a></li>
                 <li><a href="">CONTACT</a></li>
-            </ul>
-
+              </ul>
         </div>
-        <i class="fa fa-bars"></i>
+        <div class="nav">
+         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </div>
       </nav>
 
       <div class="text-box">
@@ -104,19 +111,19 @@ m <!-- -------- Campus --------- -->
         <div class="facilities-col">
           <img src="images/library.png">
           <h3>World Class Library</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquam rerum corporis possimus excepturi dignissimos recusandae ullam. Placeat, eius expedita eaque odio deserunt molestiae unde at.</p>
+          <p>SKU library was built to play a crucial role in education, community building, and the dissemination of knowledge and contribute to the overall well-being and development of individuals and society as a whole.</p>
         </div>
 
         <div class="facilities-col">
           <img src="images/basketball.png">
           <h3>Largest Play Ground</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquam rerum corporis possimus excepturi dignissimos recusandae ullam. Placeat, eius expedita eaque odio deserunt molestiae unde at.</p>
+          <p>with club sports, recreation events, group exrecise and lots of teams to cheer on, SKU sports is for everyone to enjoy.</p>
         </div>
 
         <div class="facilities-col">
           <img src="images/cafeteria.png">
           <h3>Tasty and Healthy Food</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquam rerum corporis possimus excepturi dignissimos recusandae ullam. Placeat, eius expedita eaque odio deserunt molestiae unde at.</p>
+          <p>cafeteria basically to provide a range of benefits including convenience, diverse food options, efficiency, social interaction, and cost-effectiveness. </p>
         </div>
       </div>
    </section>
@@ -179,6 +186,6 @@ m <!-- -------- Campus --------- -->
     </section>
 
 
-
+ <script src="index.js"></script>
 </body>
 </html>

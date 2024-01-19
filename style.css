@@ -29,6 +29,10 @@ nav img{
     text-align: right;
 }
 
+.hamburger{
+    display: none;
+}
+
 .nav-links ul li{
     list-style: none;
     display: inline-block;
@@ -94,7 +98,11 @@ nav img{
     transition: 1s;
 }
 
-nav .fa{
+.nav-links .fa-solid{
+    display: none;
+}
+
+.nav .fa-solid{
     display: none;
 }
 
@@ -104,32 +112,40 @@ nav .fa{
     }
 
     .nav-links ul li{
-       display: block;
-   }
+        display: block;
+    }
 
-   .nav-links{
-    position: absolute;
-    background: #f44336;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: 0;
-    text-align: left;
-    z-index: 2;
-   }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        right: -200px;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
 
-   nav .fa{
-    display: block;
-    color: #fff;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-   }
+    .nav-links .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
 
-   .nav-links ul{
-    padding: 30px;
-   }
+    .nav-links ul{
+        padding: 30px;
+    }
 
+    .nav .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
 }
 
 /* -----Course----------- */
